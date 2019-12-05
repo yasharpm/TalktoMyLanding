@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import "./abstracts/variables", "./abstracts/mixin", "./abstracts/functions";
+
+// 2. Vendors
+@import "vendors/normalize";
+
+//3. bootstrapt template
+@import "bootstrap/scss/bootstrap";
+@import "_custom-bootstrapt";
+@import "_font.scss"

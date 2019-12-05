@@ -1,0 +1,28 @@
+.btn-primary {
+  @include button-variant(
+    $scooter-blue,
+    darken($scooter-blue, 7.5%),
+    darken($scooter-blue, 10%),
+    lighten($scooter-blue, 5%),
+    lighten($scooter-blue, 10%),
+    darken($scooter-blue, 30%)
+  );
+  color: #fff !important;
+}
+// .container-fluid {
+//   padding-right: 8px;
+//   padding-left: 8px;
+// }
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: flex;
+}
+.carousel-indicators {
+  li {
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+    background-color: $solid-white;
+  }
+}

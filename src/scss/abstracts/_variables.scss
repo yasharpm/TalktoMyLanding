@@ -1,0 +1,55 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+
+/// Copy text color
+/// @type Color
+$text-color: rgb(34, 34, 34) !default;
+
+/// Alabaste white
+/// @type Color
+$alabaste-white: #f7f7f7;
+
+/// solid white
+/// @type Color
+$solid-white: #ffff;
+
+/// Scooter white
+/// @type Color
+$scooter-blue: #26c6da;
+
+/// Solid black
+/// @type Color
+$solid-black: #000;
+
+/// Dove Gray
+/// @type Color
+$dove-gray: #737373;
+
+/// Scorpion Gray
+/// @type Color
+$scorpion-gray: #5d5d5d;
+
+/// Dove Gray
+/// @type Color
+$mine-shaft: #3b3b3b;
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  "small": 320px,
+  "medium": 768px,
+  "large": 1024px
+) !default;
+
+/// @type border
+$radius-sections-size: 114px;
+$radius-sections-size-mobile: 54px;
+$radius-sections-size-tablet: 78px;
