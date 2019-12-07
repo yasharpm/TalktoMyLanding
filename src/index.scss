@@ -122,6 +122,23 @@ h3,
 }
 .btn-stretch {
   padding: 0.5rem 3.3rem;
+ 
+  @include responsive(xsm){
+    padding: 0.4rem 2.5rem;
+    font-size: 0.95rem;
+  }
+  @include responsive(sm){
+    padding: 0.4rem 2.5rem;
+    font-size: 0.95rem;
+  }
+}
+.form-control{
+  @include responsive(xsm){
+    font-size: 0.8rem
+  }
+  @include responsive(sm){
+    font-size: 0.8rem
+  }
 }
 
 .ltr {
@@ -497,8 +514,8 @@ h3,
   padding: 0px 10px;
   @include responsive(sm) {
     padding: 10px 20px 54px 20px;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
     min-height: 200px;
   }
   @include responsive(xsm) {
@@ -518,7 +535,7 @@ h3,
   .contact-us-list {
     list-style: none;
     list-style-type: none;
-    padding: 20px;
+    padding: 16px;
 
     font-size: 0.8rem;
     .contact-us-list-item:first-child {
@@ -527,12 +544,13 @@ h3,
     .contact-us-list-item {
       margin: 15px 0;
       &::before {
-        content: "\25A0"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        content: "\25A0";
         color: $scooter-blue;
         font-weight: bold;
         display: inline-block;
         width: 2em;
         margin-left: -1em;
+        font-size: 8px;
       }
       .description {
         display: block;
