@@ -527,12 +527,11 @@ h3,
   @include responsive(md) {
     padding: 0px;
   }
-  .form-container {
-    @include responsive(sm) {
-      margin-top: 20px;
-    }
+  .form-control {
+    border-radius: 10px;
   }
   .contact-us-list {
+    border-radius: 10px;
     list-style: none;
     list-style-type: none;
     padding: 16px;
