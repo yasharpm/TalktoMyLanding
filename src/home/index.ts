@@ -1,5 +1,6 @@
 import 'bootstrap';
-import './../index.scss';
+import '../index.scss';
+import './index.scss';
 declare let $: any;
 $(window).on('load', function () {
   setTimeout(() => {
@@ -8,3 +9,7 @@ $(window).on('load', function () {
 
 });
 
+$("#download").click(()=>{
+  window.open('https://tracker.metrix.ir/go3gos', '_blank'); 
+
+})

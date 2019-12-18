@@ -1,0 +1,627 @@
+//imports
+@import "../scss/main";
+html {
+  width: 100% !important;
+}
+//body
+body {
+  background-color: $alabaste-white;
+  direction: rtl;
+  text-align: right;
+  font-size: 16px;
+  font-family: dana, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 1.71;
+  width: 100%;
+  overflow-x: hidden;
+}
+h1,
+.h1 {
+  font-size: 2em;
+}
+h2,
+.h2 {
+  font-size: 1.6em;
+}
+h3,
+.h3 {
+  font-size: 1.4em;
+}
+.justify-content-evenly {
+  justify-content: space-evenly !important;
+}
+
+//1.section types
+.white-section {
+  background-color: $solid-white;
+  color: $solid-black;
+  @include responsive(sm) {
+    height: auto;
+  }
+}
+.green-section {
+  background-color: $scooter-blue;
+  color: $solid-white;
+}
+.defult-section {
+  background-color: transparent;
+  color: $solid-black;
+}
+.black-section {
+  background-color: $solid-black;
+  color: $solid-white;
+}
+.rounded-bottom-right {
+  border-bottom-right-radius: $radius-sections-size !important;
+  @include responsive(xsm) {
+    border-bottom-right-radius: $radius-sections-size-mobile !important;
+  }
+  @include responsive(sm) {
+    border-bottom-right-radius: $radius-sections-size-mobile !important;
+  }
+}
+.rounded-bottom-left {
+  border-bottom-left-radius: $radius-sections-size !important;
+  @include responsive(xsm) {
+    border-bottom-left-radius: $radius-sections-size-mobile !important;
+  }
+  @include responsive(sm) {
+    border-bottom-left-radius: $radius-sections-size-mobile !important;
+  }
+}
+.rounded-bottom {
+  border-bottom-left-radius: $radius-sections-size !important;
+  border-bottom-right-radius: $radius-sections-size !important;
+  @include responsive(xsm) {
+    border-bottom-left-radius: $radius-sections-size-mobile !important;
+    border-bottom-right-radius: $radius-sections-size-mobile !important;
+  }
+  @include responsive(sm) {
+    border-bottom-left-radius: $radius-sections-size-mobile !important;
+    border-bottom-right-radius: $radius-sections-size-mobile !important;
+  }
+}
+.rounded-right {
+  border-top-right-radius: $radius-sections-size !important;
+  border-bottom-right-radius: $radius-sections-size !important;
+  @include responsive(sm) {
+    border-top-right-radius: $radius-sections-size-mobile !important;
+    border-bottom-right-radius: $radius-sections-size-mobile !important;
+  }
+  @include responsive(sm) {
+    border-top-right-radius: $radius-sections-size-mobile !important;
+    border-bottom-right-radius: $radius-sections-size-mobile !important;
+  }
+}
+.rounded-top {
+  border-top-right-radius: $radius-sections-size !important;
+  border-top-left-radius: $radius-sections-size !important;
+  @include responsive(xsm) {
+    border-top-right-radius: $radius-sections-size-mobile !important;
+    border-top-left-radius: $radius-sections-size-mobile !important;
+  }
+  @include responsive(sm) {
+    border-top-right-radius: $radius-sections-size-mobile !important;
+    border-top-left-radius: $radius-sections-size-mobile !important;
+  }
+}
+.rounded-cloudy {
+  border-top-right-radius: $radius-sections-size !important;
+  border-bottom-left-radius: $radius-sections-size !important;
+  @include responsive(xsm) {
+    border-top-right-radius: $radius-sections-size-mobile !important;
+    border-bottom-left-radius: $radius-sections-size-mobile !important;
+  }
+  @include responsive(sm) {
+    border-top-right-radius: $radius-sections-size-mobile !important;
+    border-bottom-left-radius: $radius-sections-size-mobile !important;
+  }
+}
+.btn-rounded {
+  border-radius: 50px;
+}
+.btn-stretch {
+  padding: 0.5rem 3.3rem;
+ 
+  @include responsive(xsm){
+    padding: 0.4rem 2.5rem;
+    font-size: 0.95rem;
+  }
+  @include responsive(sm){
+    padding: 0.4rem 2.5rem;
+    font-size: 0.95rem;
+  }
+}
+.form-control{
+  @include responsive(xsm){
+    font-size: 0.8rem
+  }
+  @include responsive(sm){
+    font-size: 0.8rem
+  }
+}
+
+.ltr {
+  direction: ltr;
+}
+
+.doawnload-ways {
+  width: 100%;
+  margin: 0px;
+  @include responsive(xsm) {
+    text-align: right;
+    margin-top: 2rem;
+  }
+  @include responsive(sm) {
+    text-align: right;
+    margin-top: 1rem;
+  }
+  .download-ways-btn {
+    width: 140px;
+
+    @include responsive(xsm) {
+      width: 110px;
+    }
+    @include responsive(sm) {
+      width: 130px;
+    }
+  }
+}
+//2.header-section
+.header-section {
+  height: 850px;
+  @include responsive(xsm) {
+    height: 750px;
+  }
+  .header-section-container {
+    color: $scorpion-gray;
+    padding: 0 130px;
+    max-height: 516px;
+    width: 96vw;
+    @include responsive(xsm) {
+      padding: 5px 20px;
+    }
+    @include responsive(sm) {
+      padding: 0px;
+    }
+
+    @include responsive(md) {
+      padding: 0;
+    }
+
+    .header-first-row {
+      padding: 10px 70px 10px 0;
+      @include responsive(xsm) {
+        padding: 10px 0 10px 0;
+      }
+      @include responsive(sm) {
+        padding: 30px 30px 10px 10px;
+      }
+      @include responsive(md) {
+        padding: 10px 30px 10px 0;
+      }
+    }
+
+    .header-section-logo {
+      width: 180px;
+      @include responsive(xsm) {
+        width: 120px;
+      }
+      @include responsive(sm) {
+        width: 140px;
+      }
+    }
+    .download-rappwer {
+      @include responsive(xsm) {
+        text-align: left;
+        padding-left: 20px;
+      }
+      @include responsive(sm) {
+        text-align: left;
+      }
+      .btn {
+        font-size: 0.87rem;
+        padding: 0.395rem 0.95rem;
+
+        @include responsive(xsm) {
+          margin-right: 28px;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .header-application-info {
+      margin-top: 5.5em;
+      padding: 0 85px 0 0;
+      @include responsive(xsm) {
+        padding: 0 25px;
+        margin-top: 1.5rem;
+      }
+      @include responsive(sm) {
+        padding: 0 47px 0 30px;
+        margin-top: 3.6rem;
+      }
+      @include responsive(md) {
+        padding: 0 70px 0 70px;
+      }
+      .title {
+        font-weight: bold;
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          background-color: $scooter-blue;
+          margin-left: 5px;
+        }
+      }
+      .title-des {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 1.3em;
+        display: block;
+        padding-right: 14px;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+      .title-des2 {
+        padding-right: 14px;
+        font-size: 1em;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+    }
+    .header-mobile-container {
+      text-align: left;
+      margin-top: -40px;
+      @include responsive(xsm) {
+        text-align: center;
+        margin-top: 30px;
+      }
+      @include responsive(sm) {
+        text-align: center;
+        margin-top: 20px;
+      }
+      @include responsive(md) {
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+.services-section {
+  .header-services {
+    margin-top: -9em;
+    padding: 0px 150px;
+    @include responsive(xsm) {
+      padding: 0px 50px;
+      margin-top: 15rem;
+    }
+    @include responsive(sm) {
+      padding: 0px 81px;
+      margin-top: 15rem;
+    }
+    @include responsive(md) {
+      padding: 0;
+    }
+    .header-services-item {
+      background-color: $solid-white;
+      border-radius: 24px;
+      box-shadow: 0px 0 20px 0 rgba(0, 113, 128, 0.2);
+      text-align: center;
+      padding: 20px;
+      color: $dove-gray;
+      @include responsive(sm) {
+        margin: 10px 0;
+      }
+      @include responsive(xsm) {
+        margin: 10px 0;
+      }
+      .header-service-item-img {
+        width: 60px;
+        height: 60px;
+      }
+      .header-service-item-title {
+        margin: 20px 0;
+        color: $mine-shaft;
+        font-size: 0.8rem;
+      }
+      .header-service-item-dis {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+.feature-section {
+  margin-top: 10em;
+  @include responsive(sm) {
+    margin-top: 3em;
+  }
+  .feature-section-wrapper {
+    flex: 0 0 95%;
+    padding: 0 170px 30px;
+    color: $dove-gray;
+    font-size: 14px;
+    @include responsive(sm) {
+      padding: 34px 0;
+    }
+    @include responsive(xsm) {
+      padding: 34px 0;
+    }
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      .feature-list-item {
+        margin: 40px 0;
+        @include responsive(xsm) {
+          padding-right: 0px;
+        }
+        @include responsive(sm) {
+          padding-right: 0px;
+        }
+        img {
+          width: 50px;
+          @include responsive(xsm) {
+            width: 43px;
+          }
+          @include responsive(sm) {
+            width: 43px;
+            margin-top: -6px;
+          }
+        }
+        .feature-list-item-dis {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  .section-title {
+    padding: 50px;
+    @include responsive(sm) {
+      order: 2;
+      padding: 0;
+    }
+    @include responsive(xsm) {
+      order: 2;
+      padding: 0;
+    }
+    .section-title-lable {
+      color: $scooter-blue;
+      font-weight: bold;
+    }
+  }
+  .feature-list-container {
+    @include responsive(sm) {
+      order: 3;
+      padding-right: 0;
+    }
+    @include responsive(xsm) {
+      order: 3;
+      padding-right: 0;
+    }
+  }
+  .feature-img-container {
+    margin-top: -65px;
+    @include responsive(sm) {
+      order: 1;
+    }
+    @include responsive(xsm) {
+      order: 1;
+    }
+  }
+}
+.screnshot-section {
+  padding: 10px;
+  margin-top: 5em;
+  @include responsive(sm) {
+    order: 1;
+    margin-top: 2em;
+  }
+  .header-service-item-img {
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 113, 128, 0.16);
+    -moz-box-shadow: 0 0 5px 0 rgba(0, 113, 128, 0.16);
+    box-shadow: 0 0 5px 0 rgba(0, 113, 128, 0.16);
+    @include responsive(xsm) {
+      margin-top: 0.8rem;
+    }
+    @include responsive(sm) {
+      margin-top: 0.8rem;
+    }
+  }
+  .section-title {
+    .section-title-lable {
+      color: $scooter-blue;
+      font-weight: bold;
+    }
+    .section-title-description {
+      color: $dove-gray;
+      font-size: 0.9rem;
+    }
+  }
+}
+.user-post-section {
+  margin-top: 10em;
+  padding: 40px 280px;
+  @include responsive(sm) {
+    padding: 35px 0;
+    margin-top: 3em;
+  }
+  @include responsive(xsm) {
+    padding: 35px 0;
+    margin-top: 3em;
+  }
+  @include responsive(md) {
+    padding: 35px 0;
+  }
+  .section-title-lable {
+    font-weight: bold;
+  }
+  #carouselExampleIndicators {
+    @include responsive(xsm) {
+      display: none;
+    }
+    @include responsive(sm) {
+      display: none;
+    }
+    @include responsive(md) {
+      display: none;
+    }
+  }
+  #carouselExampleIndicators2{
+      display: none;
+      @include responsive(xsm) {
+        display: block;
+      }
+      @include responsive(sm) {
+        display: block;
+      }
+      @include responsive(md) {
+        display: block;
+      }
+  }
+  .carousel-item {
+    padding: 60px 0px;
+    min-height: 299px;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    user-select: none;
+    @include responsive(sm) {
+      font-size: 13px;
+      min-height: 200px;
+      padding: 30px 0px;
+    }
+    @include responsive(sm) {
+      font-size: 13px;
+      min-height: 200px;
+      padding: 30px 0px;
+    }
+  }
+  .carousel-indicators {
+    bottom: -31px;
+    @include responsive(sm) {
+      bottom: -41px;
+    }
+    @include responsive(sm) {
+      bottom: -41px;
+    }
+  }
+}
+
+.contact-us-section {
+  min-height: 500px;
+  margin-top: 8em;
+  margin-bottom: 8em;
+  padding: 0px 10px;
+  @include responsive(sm) {
+    padding: 10px 20px 54px 20px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    min-height: 200px;
+  }
+  @include responsive(xsm) {
+    padding: 10px 20px 54px 20px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    min-height: 200px;
+  }
+  @include responsive(md) {
+    padding: 0px;
+  }
+  .form-control {
+    border-radius: 10px;
+  }
+  .contact-us-list {
+    border-radius: 10px;
+    list-style: none;
+    list-style-type: none;
+    padding: 16px;
+
+    font-size: 0.8rem;
+    .contact-us-list-item:first-child {
+      margin-top: 0px;
+    }
+    .contact-us-list-item {
+      margin: 15px 0;
+      &::before {
+        content: "\25A0";
+        color: $scooter-blue;
+        font-weight: bold;
+        display: inline-block;
+        width: 2em;
+        margin-left: -1em;
+        font-size: 8px;
+      }
+      .description {
+        display: block;
+        padding-right: 1em;
+      }
+    }
+  }
+  .section-title {
+    padding: 60px;
+    @include responsive(sm) {
+      padding: 20px 31px;
+    }
+
+    .section-title-lable {
+      font-weight: bold;
+
+      color: $scooter-blue;
+    }
+    .section-title-description {
+      color: $mine-shaft;
+      font-size: 0.8rem;
+    }
+  }
+}
+.footer-section {
+  padding: 50px 150px;
+  @include responsive(sm) {
+    padding: 35px 20px;
+    text-align: center;
+  }
+  @include responsive(xsm) {
+    padding: 35px 20px;
+    text-align: center;
+  }
+  @include responsive(md) {
+    padding: 35px 20px;
+    text-align: center;
+  }
+  .footer-details {
+    font-size: 0.8rem;
+    @include responsive(sm) {
+      margin-top: 2em;
+      order: 2;
+    }
+    @include responsive(xsm) {
+      margin-top: 2em;
+      order: 2;
+    }
+    @include responsive(md) {
+      margin-top: 2em;
+    }
+  }
+  .footer-logo {
+    img {
+      width: 150px;
+    }
+    @include responsive(sm) {
+      order: 1;
+    }
+    @include responsive(xsm) {
+      order: 1;
+    }
+  }
+  .doawnload-ways {
+    @include responsive(sm) {
+      order: 3;
+      margin-left: 13px;
+    }
+    @include responsive(xsm) {
+      order: 3;
+      margin-top: 19px;
+      margin-left: 13px;
+    }
+  }
+}

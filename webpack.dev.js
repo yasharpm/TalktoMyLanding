@@ -11,7 +11,7 @@ module.exports = {
   // https://webpack.js.org/concepts/entry-points/#multi-page-application
   entry: {
     index: "./src/home/index.ts",
-		comment: "./src/comment/index.ts"
+		post: "./src/comment/index.ts"
   },
   // https://webpack.js.org/configuration/dev-server/
   devServer: {
@@ -87,9 +87,9 @@ module.exports = {
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/comment/index.html',
+      template: './src/post/index.html',
       inject: true,
-      chunks: ['comment'],
+      chunks: ['post'],
       filename: 'comment.html'
     }),
     new webpack.ProvidePlugin({

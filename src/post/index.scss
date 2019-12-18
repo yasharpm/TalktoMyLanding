@@ -1,0 +1,171 @@
+@import "../scss/main.scss";
+.comment-section {
+    padding-bottom: 50px;
+    .comment-section-container {
+      color: $scorpion-gray;
+      padding: 0 289px 50px 80px;
+      min-height: 516px;
+      width: 85vw;
+      color: $swamp-black;
+      @include responsive(xsm) {
+        padding: 20px 50px;
+        font-size: 12px;
+        width: 95vw;
+      }
+      @include responsive(sm) {
+        padding: 20px;
+        font-size: 12px;
+        width: 95vw;
+      }
+  
+      @include responsive(md) {
+        padding: 0;
+      }
+  
+      .comment-first-row {
+        padding: 10px 0 10px 0;
+        @include responsive(xsm) {
+          padding: 5px 0 10px 0;
+        }
+        @include responsive(sm) {
+          padding: 5px 30px 10px 10px;
+        }
+        @include responsive(md) {
+          padding: 10px 30px 10px 0;
+        }
+      }
+  
+      .comment-section-logo {
+        width: 180px;
+        @include responsive(xsm) {
+          width: 120px;
+        }
+        @include responsive(sm) {
+          width: 140px;
+        }
+      }
+    }
+  }  
+.comment-card {
+  border-radius: 8px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.05);
+  background-color: $solid-white;
+  color: $swamp-black;
+  .comment-card-content {
+    padding: 10px 50px 40px 50px;
+    @include responsive(xsm) {
+      padding: 10px 50px 10px 50px;
+    }
+    @include responsive(sm) {
+      padding: 10px 5px 10px 5px;
+    }
+  }
+  .comment-card-footer {
+    padding: 10px 43px 10px 36px;
+    border-top: 1px solid $alabaste-white;
+  }
+}
+.response-comment-card {
+    border-radius: 8px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.05);
+    background-color: $solid-white;
+    padding: 10px;
+    color: $swamp-black;
+  }
+
+  .footer-section {
+    padding: 50px 150px;
+    @include responsive(sm) {
+      padding: 35px 20px;
+      text-align: center;
+      &.footer-fix {
+        margin-bottom: 64px;
+      }
+    }
+    @include responsive(xsm) {
+      padding: 35px 20px;
+      text-align: center;
+      &.footer-fix {
+        margin-bottom: 64px;
+      }
+    }
+    @include responsive(md) {
+      padding: 35px 20px;
+      text-align: center;
+    }
+    .footer-details {
+      font-size: 0.8rem;
+      @include responsive(sm) {
+        margin-top: 2em;
+        order: 2;
+      }
+      @include responsive(xsm) {
+        margin-top: 2em;
+        order: 2;
+      }
+      @include responsive(md) {
+        margin-top: 2em;
+      }
+    }
+    .footer-logo {
+      img {
+        width: 150px;
+      }
+      @include responsive(sm) {
+        order: 1;
+      }
+      @include responsive(xsm) {
+        order: 1;
+      }
+    }
+    &.footer-fix {
+      .doawnload-ways {
+        @include responsive(sm) {
+          position: fixed;
+          bottom: 0;
+          background: $solid-white;
+          padding: 25px 5px;
+          text-align: center;
+        }
+        @include responsive(xsm) {
+          position: fixed;
+          bottom: 0;
+          background: $solid-white;
+          padding: 25px 5px;
+          text-align: center;
+        }
+        .dark {
+          @include responsive(sm) {
+            display: block;
+          }
+          @include responsive(sm) {
+            display: block;
+          }
+        }
+        .light {
+          @include responsive(sm) {
+            display: none;
+          }
+          @include responsive(sm) {
+            display: none;
+          }
+        }
+      }
+    }
+    .doawnload-ways {
+      .dark {
+        display: none;
+      }
+      @include responsive(sm) {
+        order: 3;
+        margin-left: 13px;
+      }
+      @include responsive(xsm) {
+        order: 3;
+        margin-top: 19px;
+        margin-left: 13px;
+      }
+    }
+  }
+  
+  

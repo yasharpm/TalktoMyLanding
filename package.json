@@ -16,9 +16,11 @@
     "bootstrap": "^4.3.1",
     "bootstrap-v4-rtl": "^4.3.1-6",
     "bootstrap4rtl": "^0.1.6",
+    "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "jalali-moment": "^3.3.3",
     "jquery": "^3.4.1",
     "jquery-mobile": "^1.5.0-alpha.1",
     "mini-css-extract-plugin": "^0.8.0",
@@ -28,6 +30,7 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.5",
     "css-loader": "^3.2.0",
