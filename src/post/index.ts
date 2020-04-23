@@ -7,6 +7,7 @@ import '../index.scss'
 import './index.scss'
 import '../assets/font-icon/font-icon.scss'
 
+// @ts-ignore
 import * as moment from 'jalali-moment'
 
 declare let $: any
