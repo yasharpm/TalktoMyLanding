@@ -11,7 +11,7 @@ module.exports = {
   // https://webpack.js.org/concepts/entry-points/#multi-page-application
   entry: {
     index: "./src/home/index.ts",
-		post: "./src/comment/index.ts"
+		post: "./src/post/index.ts"
   },
   // https://webpack.js.org/configuration/dev-server/
   devServer: {
