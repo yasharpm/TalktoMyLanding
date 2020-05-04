@@ -53,6 +53,17 @@ module.exports = {
         ],
       },
       {
+        test: /\.(png|jpg|gif|svg)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
+      },
+      {
         test: /bootstrap\/dist\/js\/umd\//,
         use: 'imports-loader?jQuery=jquery'
 

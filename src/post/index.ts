@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 import '../index.scss'
 import './index.scss'
-import '../assets/font-icon/font-icon.scss'
+import '../scss/font-icon.scss'
 
 // @ts-ignore
 import * as moment from 'jalali-moment'
